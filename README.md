@@ -16,31 +16,34 @@
 ### Тест случаи според критериумот Multicond
 Имаме 4 if услови со multiple conditions:
 if (hr < 0 || hr > 24)
-T|F
-F|T
-F|F
+T|T (hr = mins = sec= )
+T|F (hr = mins = sec= )
+F|T (hr = mins = sec= )
+F|F(hr = mins = sec= )
 
 if (min < 0 || min > 59)
-T|T
-T|F
-F|T
-F|F
+T|T (hr = mins = sec= )
+T|F (hr = mins = sec= )
+F|T (hr = mins = sec= )
+F|F (hr = mins = sec= )
 
 if (sec >= 0 && sec <= 59)
-T&T
-T&F
-F&T
-F&F
+T&T (hr = mins = sec= )
+T&F (hr = mins = sec= )
+F&T (hr = mins = sec= )
+F&F (hr = mins = sec= )
 
 if (hr == 24 && min == 0 && sec == 0)
-T&T&T
-T&T&F
-T&F&T
-T&F&F
-F&T&T
-F&T&F
-F&F&T
-F&F&F
+T&T&T (hr = mins = sec= )
+T&T&F (hr = mins = sec= )
+T&F&T (hr = mins = sec= )
+T&F&F (hr = mins = sec= )
+F&T&T (hr = mins = sec= )
+F&T&F (hr = mins = sec= )
+F&F&T (hr = mins = sec= )
+F&F&F (hr = mins = sec= )
 
 
 ### Тест случаи според критериумот Every branch
+
+
