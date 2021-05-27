@@ -15,25 +15,25 @@
 
 ### Тест случаи според критериумот Multicond
 Имаме 4 if услови со multiple conditions:
-if (hr < 0 || hr > 24)
+ Во првиот if (hr < 0 || hr > 24)
 T|T (hr =23 mins =59 sec= 59)
 T|F (hr = 23 mins =59 sec=59 )
 F|T (hr =25 mins =00 sec= 00)
 F|F(hr =26 mins =59 sec=59 )
 
-if (min < 0 || min > 59)
+ Во вториот if (min < 0 || min > 59)
 T|T (hr =23 mins =59 sec= 00)
 T|F (hr =23 mins =59 sec=69 )
 F|T (hr =23 mins =69 sec=59 )
 F|F (hr =24 mins =-5 sec=60 )
 
-if (sec >= 0 && sec <= 59)
+ Во третиот if (sec >= 0 && sec <= 59)
 T&T (hr =23 mins =00 sec=59 )
 T&F (hr =23 mins =59 sec=61 )
 F&T (hr =20 mins =-5 sec=10 )
 F&F (hr = 25mins =63 sec=-6 )
 
-if (hr == 24 && min == 0 && sec == 0)
+Во четвртиот if (hr == 24 && min == 0 && sec == 0)
 T&T&T (hr =24 mins =00 sec=00 )
 T&T&F (hr =24 mins =00 sec=16 )
 T&F&T (hr =24 mins =30 sec=00 )
