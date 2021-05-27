@@ -2,7 +2,7 @@
 
 
 ### Control Flow Graph
-Фотографија од control flow graph-ot https://imgur.com/a/ztu9jgQ
+Фотографија од control flow graph-ot https://imgur.com/a/xzL0qAK
 
 3.1 Иницијализација на променливата i во рамката 
 
